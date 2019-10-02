@@ -24,7 +24,7 @@ cout<<"Enter your other friend's name:\n";
 cin>>friend_name;
 
 // 4.
-cout<<"Isc"<<friend_name<<"a male(m) or female(f)?\n\n";
+cout<<"I's"<<friend_name<<"a male(m) or female(f)?\n";
 cin>>friend_sex;
 
 if (friend_sex=='m')
@@ -45,7 +45,7 @@ if (age <0 || age>110 )
 {
 	simple_error("you 're kidding!!\n");
 }
-
+//6.
 if (age==17)
 {
  age_switch=1;
@@ -67,5 +67,6 @@ case 1: cout<<"next year you will be able to vote\n"; break;
 case 2: cout<<"next year you will be "<<age+1<<"\n"; break;
 case 3: cout<<"i hope you are enjoying retirement\n"; break;
 }
-
+//7.
+cout<<"Your sincerely\n"
 }
