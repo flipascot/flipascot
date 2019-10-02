@@ -1,0 +1,71 @@
+#include"std_lib_facilities.h"
+
+int main()
+{
+
+// Változók:
+system("clear");
+string friend_name;
+string first_name;
+char friend_sex='0';
+int age;
+int age_switch;
+
+// 1. 
+cout<<"Enter the name of the person you want to write to:\n";
+cin>> first_name;
+cout<<"Dear,"<<first_name<<"\n";
+
+// 2. 
+cout<<"How are you? I haven't heard about you for ages...\n";
+
+// 3.
+cout<<"Enter your other friend's name:\n";
+cin>>friend_name;
+
+// 4.
+cout<<"Isc"<<friend_name<<"a male(m) or female(f)?\n\n";
+cin>>friend_sex;
+
+if (friend_sex=='m')
+{
+cout<<"if you see "<<friend_name<<"pls ask him to call me \n";
+}
+else
+{
+cout<<"if you see "<<friend_name<<"pls ask she to call me \n";
+}
+
+//5.
+cout<<"Enter the age\n";
+cin>>age;
+cout<<"I hear you just had a birthday and your age years old\n";
+
+if (age <0 || age>110 )
+{
+	simple_error("you 're kidding!!\n");
+}
+
+if (age==17)
+{
+ age_switch=1;
+}
+
+if (age<12)
+{
+ age_switch=2;
+}
+
+if (age>70)
+{
+ age_switch=3; 
+}
+
+switch(age_switch)
+{
+case 1: cout<<"next year you will be able to vote\n"; break;
+case 2: cout<<"next year you will be "<<age+1<<"\n"; break;
+case 3: cout<<"i hope you are enjoying retirement\n"; break;
+}
+
+}
